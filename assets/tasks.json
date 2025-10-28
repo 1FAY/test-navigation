@@ -1,0 +1,23 @@
+[
+  {
+    "id": "t1",
+    "title_text": "Сделать макет",
+    "done": 0,
+    "deadline_iso": "2025-11-01T18:00:00Z",
+    "priority": "high"
+  },
+  {
+    "id": "t2",
+    "title_text": "Созвон с заказчиком",
+    "done": 1,
+    "deadline_iso": null,
+    "priority": "low"
+  },
+  {
+    "id": "t3",
+    "title_text": "Написать провайдер",
+    "done": 0,
+    "deadline_iso": "2025-11-05T10:00:00Z",
+    "priority": "medium"
+  }
+]
