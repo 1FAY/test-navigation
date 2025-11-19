@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/data/features/tastks/ui/task_list_screen.dart';
+
+import 'navigation/router.dart';
+import 'states/app_state.dart';
 
 
 class App extends StatefulWidget {
@@ -9,10 +11,15 @@ class App extends StatefulWidget {
   State<App> createState() => _AppState();
 }
 
-class _AppState extends State<App> {  
+class _AppState extends State<App> {
+  final appState = AppState();
+  
+  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final router = createRouter(appState);
+
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme
@@ -30,7 +37,7 @@ class _AppState extends State<App> {
           ),
       ),
       themeMode: ThemeMode.dark,
-      home: TaskListScreen(),
+      routerConfig: router,
     );
   }
 }
